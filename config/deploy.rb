@@ -1,5 +1,5 @@
-set :application, 'projectname'
-set :repo_url, 'git@bitbucket.org:user/repo.git'
+set :application, 'wp-capistrano'
+set :repo_url, 'git@github.com:rotrer/wp-capistrano.git'
 
 set :scm, :git
 set :ssh_options, { :forward_agent => true }
@@ -7,7 +7,7 @@ set :ssh_options, { :forward_agent => true }
 set :deploy_via, :remote_cache
 set :copy_exclude, [".git", ".DS_Store", ".gitignore", ".gitmodules"]
 
-role :app, %w{user@ssh-destination}
+role :app, %w{rotrer@192.168.1.95}
 
 set :linked_dirs, %w{app/uploads}
 
