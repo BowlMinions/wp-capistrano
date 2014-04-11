@@ -7,12 +7,14 @@ set :ssh_options, { :forward_agent => true }
 set :deploy_via, :remote_cache
 set :copy_exclude, [".git", ".DS_Store", ".gitignore", ".gitmodules"]
 
-role :app, %w{rotrer@192.168.1.95}
+role :app, %w{rotrer@stage.rotrer.com}
 
 set :linked_dirs, %w{app/uploads}
 
 set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --quiet --optimize-autoloader'
 set :composer_roles, :all
+
+SSHKit.config.command_map[:composer] = "/home/rotrer/composer"
 
 namespace :deploy do
 

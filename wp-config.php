@@ -14,14 +14,14 @@
  * @package WordPress
  */
 
-if ( file_exists( dirname( __FILE__ ) . '/config-staging.php' ) ) {
+if ( file_exists( dirname( __FILE__ ) . '/config-development.php' ) ) {
+	require( 'config-development.php' );
+}
+else if ( file_exists( dirname( __FILE__ ) . '/config-staging.php' ) ) {
     require( 'config-staging.php' );
 }
 else if ( file_exists( dirname( __FILE__ ) . '/config-production.php' ) ) {
     require( 'config-production.php' );
-}
-else {
-    require( 'config-development.php' );
 }
 
 /**#@+
@@ -70,7 +70,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 
