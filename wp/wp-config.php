@@ -16,8 +16,8 @@
 if ( file_exists( dirname( __FILE__ ) . '/config-development.php' ) ) {
 	require( 'config-development.php' );
 }
-else if ( file_exists( dirname( dirname( __FILE__ ) ) . '/shared/config-staging.php' ) ) {
-    require( dirname( dirname( __FILE__ ) ) . '/shared/config-staging.php' );
+else if ( file_exists( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/shared/config-staging.php' ) ) {
+    require( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/shared/config-staging.php' );
 }
 else if ( file_exists( dirname( __FILE__ ) . '/config-production.php' ) ) {
     require( 'config-production.php' );
