@@ -10,3 +10,4 @@ deploy/
 Capfile
 config-*.php
 wp/config-*.php
+wp/wp-content/uploads
