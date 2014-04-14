@@ -1,5 +1,5 @@
 set :application, 'wp-capistrano'
-set :repo_url, 'git@github.com:rotrer/wp-capistrano.git'
+set :repo_url, 'git@github.com:BowlMinions/wp-capistrano.git'
 
 set :scm, :git
 set :ssh_options, { :forward_agent => true }
@@ -7,14 +7,14 @@ set :ssh_options, { :forward_agent => true }
 set :deploy_via, :remote_cache
 set :copy_exclude, [".git", ".DS_Store", ".gitignore", ".gitmodules"]
 
-role :app, %w{rotrer@stage.rotrer.com}
+role :app, %w{desarrollo@dev.bowl.com}
 
 set :linked_dirs, %w{app/uploads}
 
 set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --quiet --optimize-autoloader'
 set :composer_roles, :all
 
-SSHKit.config.command_map[:composer] = "/home/rotrer/composer"
+SSHKit.config.command_map[:composer] = "/home/desarrallo/composer"
 
 namespace :deploy do
 

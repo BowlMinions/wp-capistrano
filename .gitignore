@@ -11,3 +11,4 @@ Capfile
 config-*.php
 wp/config-*.php
 wp/wp-content/uploads
+**/.DS_STORE
