@@ -14,7 +14,7 @@ set :linked_dirs, %w{app/uploads}
 set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --quiet --optimize-autoloader'
 set :composer_roles, :all
 
-SSHKit.config.command_map[:composer] = "/home/desarrallo/composer"
+SSHKit.config.command_map[:composer] = "/home/desarrollo/composer"
 
 namespace :deploy do
 
