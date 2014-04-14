@@ -36,7 +36,7 @@
 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				<h3>Rotrer</h3>
+				<h3>RAAUUUUUUUULL!!</h3>
 			</a>
 
 			<div id="navbar" class="navbar">
